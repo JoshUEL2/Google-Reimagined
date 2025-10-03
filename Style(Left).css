@@ -139,10 +139,10 @@ img {
 }
 
 /* Style and reposition the actual "Show more" bubble itself */
-.in7vHe.oQOpie {
+.in7vHe.btku5b.NQYJvc.FR7ZSc {
     background: var(--card) !important;
     border-radius: 18px !important;
-    transform: translateY(21px) !important;
+  transform: translateY(21px); /* shifts 20px down */
 }
 
 /* Shopping Page Top Bar */
@@ -215,3 +215,40 @@ g-inner-card.ExWXFf a, g-inner-card.ExWXFf .sh-np__product-title {
     background: var(--panel) !important;
     border-top: 1px solid var(--border) !important;
 }
+
+/* ================================
+   Center Page Layout (Corrected)
+   ================================ 
+
+/* 1. Set a max-width and center the main content area */
+/*
+#main {
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+}
+*/
+
+/* 4. Offset the top header/search bar area and add space below it */
+/*
+#searchform {
+    position: relative !important;
+    left: 650px !important; 
+    margin-bottom: -60px !important; 
+}
+*/
+
+/* 3. Remove the right-hand sidebar to create a single column */
+/*
+#rhs {
+    display: none !important;
+}
+*/
+
+/* 4. Adjust the main results column to remove extra margins */
+/* This prevents it from being pushed to the side. */
+/*
+#center_col {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+*/
