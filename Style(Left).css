@@ -1,0 +1,217 @@
+/* ================================
+   Google SERP Dark Mode (Uncropped)
+   ================================ */
+
+:root {
+  --bg: #121214;
+  --panel: #1a1a1e;
+  --card: #1a1a1e;
+  --text: #f0f0f0;
+  --muted: #b3b3b5;
+  --link: #7aa6ff;
+  --link-visited: #9ca8d8;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 4px 16px rgba(0,0,0,0.55);
+  --box-gap: 16px;
+  --radius: 12px;
+}
+
+/* ================================
+   Layout & Backgrounds
+   ================================ */
+
+/* Base and main layout elements */
+html, body, #gb, .sfbg, .sfbgg, .A8SBwf, .o3j99, .appbar, #tU52Vb, .mnr-c, .Wt5Tfe, .VjDLd, .A9fM7e {
+  background: var(--bg) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+body {
+  color: var(--text) !important;
+}
+
+/* General result cards */
+.g, .tF2Cxc, .dbsr, .SoaBEf {
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+  margin: var(--box-gap) 0 !important;
+  padding: 14px 16px !important;
+}
+
+/* AI overview */
+.Ww4FFb, .pChizf, .WZIVy {
+  background: var(--panel) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+  margin: var(--box-gap) 0 !important;
+  padding: 16px !important;
+  background-image: none !important;
+}
+
+/* People also ask */
+.related-question-pair, .s75CSd {
+  background: var(--card) !important;
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--border) !important;
+  margin: var(--box-gap) 0 !important;
+  padding: 2px 14px !important; 
+}
+
+/* Search bar */
+input[name="q"], .RNNXgb, .a4bIc {
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* ================================
+   Typography & Images
+   ================================ */
+
+/* Links */
+a, .LC20lb {
+  color: var(--link) !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+a:hover, .LC20lb:hover { text-decoration: underline !important; }
+a:visited, .LC20lb:visited { color: var(--link-visited) !important; }
+
+/* Snippet text */
+.IsZvec, .VwiC3b, .aCOpRe, .MUxGbd, .st {
+  color: var(--muted) !important;
+}
+
+/* URLs */
+cite, .TbwUpd, .iUh30 {
+  color: #c2c2c4 !important;
+  font-size: 13px !important;
+}
+
+/* Specific fix for green URL background inside search results */
+.g cite, .g .TbwUpd {
+    background: transparent !important;
+}
+
+
+/* Images softer */
+img {
+  filter: brightness(0.95) saturate(0.9) contrast(0.98) !important;
+  background: var(--bg) !important;
+}
+
+/* ================================
+   Footer
+   ================================ */
+#foot, .f, .Jc0wAb {
+  background: transparent !important;
+  color: #aaa !important;
+}
+
+/* ================================
+   Specific Component Fixes
+   ================================ */
+
+/* Align search result URL with title */
+.NJjxre {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Remove blue hover bar on "People also ask" */
+.ysxiae.iRPzcb {
+    display: none !important;
+}
+
+/* Remove gradient from AI Overview */
+.RDmXvc {
+    display: none !important;
+}
+
+/* Force background on "Show more" and "Hello!" pill buttons */
+.lACQkd, .zNsLfb, .KcXNxb {
+    background: #121214 !important;
+}
+
+/* Style and reposition the actual "Show more" bubble itself */
+.in7vHe.oQOpie {
+    background: var(--card) !important;
+    border-radius: 18px !important;
+    transform: translateY(21px) !important;
+}
+
+/* Shopping Page Top Bar */
+.qpV6eb {
+    background-color: #121214 !important;
+}
+
+
+/* ================================
+   Shopping Page Product Card Fix
+   ================================ */
+g-inner-card.ExWXFf {
+    background: #1a1a1e !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+/* Hides the magnifying glass icon from the search bar */
+.iblpc {
+    display: none !important;
+}
+/* Move search bar text to the right */
+.gLFyf {
+    padding-left: 15px !important;
+}
+
+/* Change background of Translate/Dictionary panel */
+.lr_container, .vkc_np {
+    background-color: #1a1a1e !important;
+}
+
+/* Align the text block inside product cards */
+g-inner-card.ExWXFf .r033ob {
+    margin-top: 4px !important;
+    margin-left: 4px !important;
+}
+
+/* Ensure text inside the product cards is visible */
+g-inner-card.ExWXFf * {
+    color: var(--text) !important;
+}
+g-inner-card.ExWXFf a, g-inner-card.ExWXFf .sh-np__product-title {
+    color: var(--link) !important;
+}
+
+/* Style just the "See more" button and remove container background */
+.U48fD {
+    background: transparent !important;
+}
+
+/* Style the synonym/related term buttons in dictionary results */
+.Bdhvof.BGBBnd {
+    background-color: #2a2d31 !important;
+    border: 0px solid var(--border) !important;
+    border-radius: 16px !important; /* Makes the buttons pill-shaped */
+    padding: 0px 0px !important;   /* Adds a little space around the text */
+}
+
+/* Change background of knowledge panel description */
+.LGOjhe {
+    background-color: #1a1a1e !important;
+}
+/* Change background of knowledge panel description */
+.LGOjhe {
+    background-color: #1a1a1e !important;
+}
+
+/* Style the footer bar to match the theme */
+#fbar {
+    background: var(--panel) !important;
+    border-top: 1px solid var(--border) !important;
+}
